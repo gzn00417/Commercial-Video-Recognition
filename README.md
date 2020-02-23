@@ -152,7 +152,7 @@ data.describe()
 sns.distplot(data['Label'], kde=False)
 ```
 
-![img](D:\GZN\HIT\个人文件\kaggle\Commercial-Video-Recognition\README\Sun, 23 Feb 2020 171819.png)
+![img](.\README\Sun, 23 Feb 2020 171819.png)
 
 ```python
 # 时长Length分布和统计
