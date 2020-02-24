@@ -537,6 +537,30 @@ random model auc score 0.505389
 
 > 测试集上模型的表现较为优秀，ROC_AUC和Accuracy分别达到了96%和90%的分数
 
+- 假阳性率为横坐标，真阳性率为纵坐标做曲线，评价模型
+
+```python
+from sklearn.metrics import roc_curve, auc
+fpr,tpr,threshold = roc_curve(ytest,ytest_pred_clf[:,1])
+roc_auc = auc(fpr,tpr)
+## 假阳性率为横坐标，真阳性率为纵坐标做曲线
+plt.figure()
+lw = 2
+plt.figure(figsize=(10,10))
+plt.plot(fpr, tpr, color='darkorange',
+         lw=lw, 
+         label='ROC curve (area = %0.2f)' % roc_auc) 
+plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('Receiver operating characteristic curve')
+plt.legend(loc="lower right")
+plt.show()
+```
+
+![img](.\README\Mon, 24 Feb 2020 084655.png)
 
 # 项目总结
 
