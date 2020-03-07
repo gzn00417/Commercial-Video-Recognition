@@ -1,6 +1,8 @@
 # Commercial-Vedio-Recognition
 
 > Project:基于数据挖掘的tik tok商用广告视频识别
+> 
+> [CSDN博客](https://blog.csdn.net/gzn00417/article/details/104464149)
 >
 > [Notebook From Kaggle](https://www.kaggle.com/guozhuoning/commercial-video-recognition)
 >
@@ -565,16 +567,3 @@ plt.show()
 # 项目总结
 
 >  通过对于视频提取的数据的异常处理和清洗，依据随机森林模型的重要性排序选择有效贡献于标签的特征，用PCA融合出新的显著特征，在基于决策树对离散数据分箱，输入随机森林分类器后评价准确率最高达到了96%，可以认为较好的完成了对商业广告视频的识别。
-
-
-
-
-
-
-
-
-
-
-
-
-
