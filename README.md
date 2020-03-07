@@ -1,8 +1,11 @@
-# Commercial-Vedio-Recognition
+# 基于数据挖掘的抖音商用广告视频识别
+- ### Commercial-Vedio-Recognition
 
 > Project:基于数据挖掘的tik tok商用广告视频识别
 > 
 > [CSDN博客](https://blog.csdn.net/gzn00417/article/details/104464149)
+> 
+>[GitHub](https://github.com/gzn00417/Commercial-Video-Recognition)
 >
 > [Notebook From Kaggle](https://www.kaggle.com/guozhuoning/commercial-video-recognition)
 >
@@ -154,7 +157,7 @@ data.describe()
 sns.distplot(data['Label'], kde=False)
 ```
 
-![img](.\README\Sun, 23 Feb 2020 173809.png)
+![](https://img-blog.csdnimg.cn/20200223175748235.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
 ```python
 # 时长Length分布和统计
@@ -176,9 +179,9 @@ facet.set_axis_labels("Length", "Density")
 - 可以看出是否为商业广告在视频长度上有着相似的分布，但又存在着不同
 - 通过图表可以发现有异常数据，剔除后显示如下
 
-![img](.\README\Sun, 23 Feb 2020 171823.png)
+![](https://img-blog.csdnimg.cn/2020022317581941.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
-![img](.\README\Sun, 23 Feb 2020 171824.png)
+![](https://img-blog.csdnimg.cn/20200223175830399.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
 # 清洗数据
 
@@ -237,7 +240,7 @@ data['Label'].hist()
 
 > 通过柱形图可以简单观察到标签修改完成
 
-![img](.\README\Sun, 23 Feb 2020 171827.png)
+![](https://img-blog.csdnimg.cn/20200223175844234.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
 ## 哑变量
 
@@ -319,7 +322,7 @@ plt.step(x=SumImp['Feature'], y=SumImp['Imp'])
 - 在排序后的第25个特征附近的特征的重要性仅仅有重要程度最高的特征的10%
 - 因此在保证特征充足、又简化模型复杂度的情况下，我选择前25个特征进行建模
 
-![img](.\README\Sun, 23 Feb 2020 171832.png)
+![](https://img-blog.csdnimg.cn/20200223175857647.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
 ## PCA
 
@@ -539,6 +542,7 @@ random model auc score 0.505389
 
 > 测试集上模型的表现较为优秀，ROC_AUC和Accuracy分别达到了96%和90%的分数
 
+
 - 假阳性率为横坐标，真阳性率为纵坐标做曲线，评价模型
 
 ```python
@@ -562,7 +566,7 @@ plt.legend(loc="lower right")
 plt.show()
 ```
 
-![img](.\README\Mon, 24 Feb 2020 084655.png)
+![](https://img-blog.csdnimg.cn/20200224084858639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2d6bjAwNDE3,size_16,color_FFFFFF,t_70)
 
 # 项目总结
 
