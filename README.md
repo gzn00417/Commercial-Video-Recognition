@@ -5,8 +5,6 @@
 > 
 > [CSDN博客](https://blog.csdn.net/gzn00417/article/details/104464149)
 > 
->[GitHub](https://github.com/gzn00417/Commercial-Video-Recognition)
->
 > [Notebook From Kaggle](https://www.kaggle.com/guozhuoning/commercial-video-recognition)
 >
 > [Notebook From 阿里天池](https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12281897.0.0.209439a9mvKQMa&postId=91889)
